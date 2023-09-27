@@ -6,7 +6,7 @@
 
 
 ■環境
-python3.11, windows 10
+python3.11, windows10 64bit
 ライブラリ
 selenium openpyxl 
 (多分2つだけ)
