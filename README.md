@@ -18,7 +18,7 @@ selenium openpyxl
 
 ■操作手順
 1. ip.xlsxを作成しの1列目に調べたいip列を貼り付けて保存した後閉じる
-2. result.xlsxのヘッダー(1行目)以外削除して保存した後閉じる
+2. result_template.xlsx複製してresult.xlsxとしてリネームする
 3. 以下のようにcralwer.pyを実行する(実行中はこの2つのxlsxファイルを開かないこと)
 #python .\cralwer.py
 4. 終了したらresult.xlsxを開いて結果を確認する
