@@ -22,3 +22,6 @@ selenium openpyxl
 3. 以下のようにcralwer.pyを実行する(実行中はこの2つのxlsxファイルを開かないこと)
 #python .\cralwer.py
 4. 終了したらresult.xlsxを開いて結果を確認する
+
+chromedriver.exeはchromeのバージョンと対応したものを下記サイトから適宜ダウンロードして置き換える
+https://chromedriver.chromium.org/downloads
