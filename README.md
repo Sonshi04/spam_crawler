@@ -35,7 +35,6 @@ https://www.python.org/ > Downloads > Download for Windows から最新版のpyt
 
 Current browser version is 123.0.6312.60 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
 
-- 以下最新版chromedriver.exeのダウンロード場所
-- win64のchromedriverをダウンロード
+- 以下最新版chromedriver.exeのダウンロード場所 win64のchromedriverをダウンロード
 https://googlechromelabs.github.io/chrome-for-testing/
 
