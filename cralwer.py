@@ -12,7 +12,7 @@ options.add_argument('--ignore-ssl-errors=yes')
 options.add_argument("start-maximized")
 options.add_argument("enable-automation")
 options.add_argument("--no-sandbox")
-#options.add_argument("--headless=new")
+options.add_argument("--headless=new")
 options.add_argument(
     "user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
 )
@@ -25,7 +25,7 @@ prefs = {"profile.default_content_setting_values.notifications" : 2}
 options.add_experimental_option("prefs",prefs)
 driver = webdriver.Chrome(options=options)
 driver.set_window_size(1200, 600)
-wait = WebDriverWait(driver=driver, timeout=60) 
+wait = WebDriverWait(driver=driver, timeout=20) 
 
 #読み込みexcelファイル
 wb = openpyxl.load_workbook("ip.xlsx")
@@ -107,12 +107,17 @@ for ip in ip_list:
   #trendmicro
   driver.get(trendmicro_url)
   print("trendmicro")
-  wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, trendmicro_form_selector)))
   trendmicro_form = driver.find_element(By.CSS_SELECTOR, trendmicro_form_selector)
   trendmicro_form.send_keys(ip)
   trendmicro_click_button = driver.find_element(By.CSS_SELECTOR,trendmicro_click_selector)
   driver.execute_script('arguments[0].click();', trendmicro_click_button)
-  wait.until(EC.text_to_be_present_in_element((By.CSS_SELECTOR,trendmicro_result_selector),'List'))
+  try:
+    wait.until(EC.text_to_be_present_in_element((By.CSS_SELECTOR, trendmicro_result_selector), 'List'))
+  except Exception as e:
+    # エラーが発生した場合の処理
+    print(f"エラーが発生しました: {e}")
+    index += 1
+    continue  # エラーが発生したらcontinueする 
   trendmicro_result = driver.find_element(By.CSS_SELECTOR,trendmicro_result_selector).text
 
   ##Excel書き込み
