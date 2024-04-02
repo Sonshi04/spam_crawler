@@ -14,6 +14,7 @@ selenium openpyxl
 ■環境構築
 1. python3.11インストーラをを公式サイトからダウンロードしてpythonをインストール
 https://www.python.org/ > Downloads > Download for Windows から最新版のpythonをダウンロード
+インストーラーのオプション等はすべてデフォルトでOK
 2. ライブラリをインストール
 コマンドプロンプトを開き、以下を実行
 #pip install openpyxl selenium
