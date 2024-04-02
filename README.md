@@ -31,8 +31,8 @@ https://www.python.org/ > Downloads > Download for Windows から最新版のpyt
 - このスクリプトで参照中のIPでエラーが出た場合、そのIP部分の結果は空白になるので手動で埋める必要あり
 - スクリプトを実行中にxlsxファイルを開くとエラーでスクリプトが止まる可能性があるので注意(最初からやり直し)
 - chromeのバージョンがある程度新しくなるとこのスクリプトが動かなくなるので、適宜今のchromeバージョンにあったchromedriver.exeをダウンロードする
-- バージョンによるエラーの場合は、以下から最新版chromedriver.exeのダウンロードする
--  win64のchromedriverをダウンロードし、chromedriver.exeを置き換える
+-   バージョンによるエラーの場合は、以下から最新版chromedriver.exeのダウンロードする
+-   win64のchromedriverをダウンロードし、chromedriver.exeを置き換える
 https://googlechromelabs.github.io/chrome-for-testing/#stable
 
 ↓バージョン違いでこのようなエラーがでる
