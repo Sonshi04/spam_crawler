@@ -22,7 +22,6 @@ https://www.python.org/ > Downloads > Download for Windows から最新版のpyt
 ■操作手順
 1. このスクリプト一式を右上のCodeからzipでダウンロード、任意の場所に展開する
 2. cralwer.pyと同一ディレクトリにip.xlsxを作成し、1列目に調べたいip列を貼り付けて保存した後閉じる
-- - 
 3. result_template.xlsxを複製してresult.xlsxとしてリネームする
 4. コマンドプロンプトでcralwer.pyと同一ディレクトリに移動し、以下のようにcralwer.pyを実行する
 #python cralwer.py
