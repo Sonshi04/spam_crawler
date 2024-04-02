@@ -31,7 +31,8 @@ https://www.python.org/ > Downloads > Download for Windows から最新版のpyt
 - chromeのバージョンがある程度新しくなるとこのスクリプトが動かなくなるので、
 - 適宜今のchromeバージョンにあったchromedriver.exeをダウンロードする
 
-↓バージョン違いでこのようなエラーがでる\\
+↓バージョン違いでこのようなエラーがでる
+
 Current browser version is 123.0.6312.60 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
 
 - 以下最新版chromedriver.exeのダウンロード場所
