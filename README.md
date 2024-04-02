@@ -20,7 +20,7 @@ https://www.python.org/ > Downloads > Download for Windows から最新版のpyt
 #pip install openpyxl selenium
 
 ■操作手順
-1. このコードを右上のCodeからzipでダウンロード、任意の場所に展開する
+1. このスクリプト一式を右上のCodeからzipでダウンロード、任意の場所に展開する
 2. cralwer.pyと同一ディレクトリにip.xlsxを作成し、1列目に調べたいip列を貼り付けて保存した後閉じる
 - - 
 3. result_template.xlsxを複製してresult.xlsxとしてリネームする
