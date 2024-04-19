@@ -103,7 +103,7 @@ for ip in ip_list:
   spamcop_click_button = driver.find_element(By.CSS_SELECTOR,spamcop_click_selector)
   spamcop_click_button.click()
   spamcop_result = driver.find_elements(By.XPATH,spamcop_result_xpath)[0].text
-  print(f'ip:{ip},spamcop完了')
+  print(f'spamcop完了')
   #trendmicro
   driver.get(trendmicro_url)
   trendmicro_form = driver.find_element(By.CSS_SELECTOR, trendmicro_form_selector)
