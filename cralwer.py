@@ -95,18 +95,17 @@ for ip in ip_list:
       if status == "NG":
         NG_count += 1
         NG_sites.append(site)
-  print(f'ip:{ip}, blacklistalert_count:{trs_count}')
+  print(f'ip:{ip},blacklistalert完了')
   #spamcop
   driver.get(spamcop_url)
   spamcop_form = driver.find_element(By.CSS_SELECTOR, spamcop_form_selector)
-  print("find")
   spamcop_form.send_keys(ip)
   spamcop_click_button = driver.find_element(By.CSS_SELECTOR,spamcop_click_selector)
   spamcop_click_button.click()
   spamcop_result = driver.find_elements(By.XPATH,spamcop_result_xpath)[0].text
+  print(f'ip:{ip},spamcop完了')
   #trendmicro
   driver.get(trendmicro_url)
-  print("trendmicro")
   trendmicro_form = driver.find_element(By.CSS_SELECTOR, trendmicro_form_selector)
   trendmicro_form.send_keys(ip)
   trendmicro_click_button = driver.find_element(By.CSS_SELECTOR,trendmicro_click_selector)
@@ -117,9 +116,10 @@ for ip in ip_list:
     # エラーが発生した場合の処理
     print(f"エラーが発生しました: {e}")
     index += 1
+    print("trendmicroエラー")
     continue  # エラーが発生したらcontinueする 
   trendmicro_result = driver.find_element(By.CSS_SELECTOR,trendmicro_result_selector).text
-
+  print("trendmicro完了")
   ##Excel書き込み
   ws2.cell(row=index,column=1).value = ip
   #blacklistalert
