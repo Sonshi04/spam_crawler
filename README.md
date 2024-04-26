@@ -17,7 +17,7 @@ https://www.python.org/ > Downloads > Download for Windows から最新版のpyt
 インストーラーのオプション等はすべてデフォルトでOK
 2. ライブラリをインストール
 コマンドプロンプトを開き、以下を実行
-# pip install openpyxl selenium
+#pip install openpyxl selenium
 
 ■操作手順  ※上の環境構築は行っておくこと
 1. ツール一式をダウンロードする
@@ -27,7 +27,7 @@ https://www.python.org/ > Downloads > Download for Windows から最新版のpyt
    1列目に調べたいip列を貼り付けて保存した後閉じる
 3. result_template.xlsxを複製してresult.xlsx(ツール動作中はファイル名固定)としてリネームする
 4. コマンドプロンプトでcralwer.pyと同一ディレクトリに移動し、以下のようにcralwer.pyを実行する
-   # python cralwer.py
+   #python cralwer.py
 5. 終了したらresult.xlsxを開いて結果を確認する
 
 
