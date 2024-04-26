@@ -23,17 +23,17 @@ https://www.python.org/ > Downloads > Download for Windows から最新版のpyt
 1. ツール一式をダウンロードする <br>
    右上のCodeをクリックし、表示された「Download ZIP」をクリック <br>
    任意の場所に展開する <br>
-2. cralwer.pyと同一ディレクトリにip.xlsxを作成し、<br>
-   1列目に調べたいip列を貼り付けて保存した後閉じる ※ ツール動作中はファイル名変更不可
-3. result_template.xlsxを複製してresult.xlsxとしてリネームする ※ ツール動作中はファイル名変更不可
+2. cralwer.pyと同一ディレクトリにip.xlsx(ツール動作中はリネーム不可)を作成し、<br>
+   1列目に調べたいip列を貼り付けて保存した後閉じる
+3. result_template.xlsxを複製し、result.xlsx(ツール動作中はリネーム不可)としてリネームする 
 4. コマンドプロンプトでcralwer.pyと同一ディレクトリに移動し、以下のようにcralwer.pyを実行する <br>
    #python cralwer.py <br>
+   ※ 実行中にxlsxファイルを開かないこと
 5. 終了したらresult.xlsxを開いて結果を確認する <br>
 
 
 ※注意事項
 - このスクリプトで参照中のIPでエラーが出た場合、そのIP部分の結果は空白になるので手動で埋める必要あり
-- スクリプトを実行中にxlsxファイルを開くとエラーでスクリプトが止まる可能性があるので注意(最初からやり直し)
 - chromeのバージョンがある程度新しくなるとこのスクリプトが動かなくなるので、適宜今のchromeバージョンにあったchromedriver.exeをダウンロードする
   -   バージョンによるエラーの場合は、以下から最新版chromedriver.exeのダウンロードする
   -   https://googlechromelabs.github.io/chrome-for-testing/#stable
