@@ -23,9 +23,9 @@ https://www.python.org/ > Downloads > Download for Windows から最新版のpyt
 1. ツール一式をダウンロードする <br>
    右上のCodeをクリックし、表示された「Download ZIP」をクリック <br>
    任意の場所に展開する <br>
-2. cralwer.pyと同一ディレクトリにip.xlsx(ツール動作中はファイル名固定)を作成し、<br>
+2. cralwer.pyと同一ディレクトリにip.xlsx(ツール動作中はファイル名変更不可)を作成し、<br>
    1列目に調べたいip列を貼り付けて保存した後閉じる <br>
-3. result_template.xlsxを複製してresult.xlsx(ツール動作中はファイル名固定)としてリネームする <br>
+3. result_template.xlsxを複製してresult.xlsx(ツール動作中はファイル名変更不可)としてリネームする <br>
 4. コマンドプロンプトでcralwer.pyと同一ディレクトリに移動し、以下のようにcralwer.pyを実行する <br>
    #python cralwer.py <br>
 5. 終了したらresult.xlsxを開いて結果を確認する <br>
