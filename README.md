@@ -12,23 +12,23 @@ selenium openpyxl
 (多分2つだけ)
 
 ■環境構築
-1. python3.11インストーラをを公式サイトからダウンロードしてpythonをインストール
+1. python3.11インストーラをを公式サイトからダウンロードしてpythonをインストール <br>
 https://www.python.org/ > Downloads > Download for Windows から最新版のpythonをダウンロード <br>
-インストーラーのオプション等はすべてデフォルトでOK
-2. ライブラリをインストール
+インストーラーのオプション等はすべてデフォルトでOK <br>
+2. ライブラリをインストール <br>
 コマンドプロンプトを開き、以下を実行 <br>
-#pip install openpyxl selenium
+#pip install openpyxl selenium <br>
 
 ■操作手順  ※上の環境構築は行っておくこと
-1. ツール一式をダウンロードする
-   右上のCodeをクリックし、表示された「Download ZIP」をクリック
-   任意の場所に展開する
+1. ツール一式をダウンロードする <br>
+   右上のCodeをクリックし、表示された「Download ZIP」をクリック <br>
+   任意の場所に展開する <br>
 2. cralwer.pyと同一ディレクトリにip.xlsx(ツール動作中はファイル名固定)を作成し、<br>
-   1列目に調べたいip列を貼り付けて保存した後閉じる
-3. result_template.xlsxを複製してresult.xlsx(ツール動作中はファイル名固定)としてリネームする
+   1列目に調べたいip列を貼り付けて保存した後閉じる <br>
+3. result_template.xlsxを複製してresult.xlsx(ツール動作中はファイル名固定)としてリネームする <br>
 4. コマンドプロンプトでcralwer.pyと同一ディレクトリに移動し、以下のようにcralwer.pyを実行する <br>
-   #python cralwer.py
-5. 終了したらresult.xlsxを開いて結果を確認する
+   #python cralwer.py <br>
+5. 終了したらresult.xlsxを開いて結果を確認する <br>
 
 
 ※注意事項
